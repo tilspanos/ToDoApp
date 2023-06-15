@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST - Home</title>
+
+    <!-- Bootstrap -->
+    <script type="text/javascript" nonce="31ec44ad184843da9386c5ce16f" src="//local.adguard.org?ts=1686823947308&amp;type=content-script&amp;dmn=att-c.udemycdn.com&amp;url=https%3A%2F%2Fatt-c.udemycdn.com%2F2023-05-08_07-11-15-6984a63cf092dd9fdef0d83b147747c6%2Foriginal.html%3Fresponse-content-disposition%3Dattachment%253B%2Bfilename%253Dhome-todo.html%26Expires%3D1686880624%26Signature%3DYrL0fjyXmsL0xsm-v3Q5PIt6-8cmjsyxE6M3BZDEquCGwPkqKVKdF0hhfcKYe41DLS6FfttgYLdXHg8TTu~XqveqziG958tjoS-~B~uZgt1u5XKzbeK-jEfsqjL5PQeHbPltMz~DlULAxwEOUfdKMfKRkxungdjf~X9cJPIe6QUVucwTdzPtbCtlp-Z75s3XaVxzXtRwkHTc~9YoDkKocsnq671TW4paxoXRSM1NR8OpSQg69Zzo~cwU-2UyIMUhGQiU0VKsnSUAyy43RoL90JXY~-hOszxorZk80dAAsb5NtWj0m84fV2zRWKS0~Jy4VRIbvjvKEygSbsQC6IlyXg__%26Key-Pair-Id%3DAPKAITJV77WS5ZT7262A&amp;app=com.google.Chrome&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1&amp;stealth=1&amp;st-push&amp;st-loc&amp;st-java&amp;st-dnt"></script>
+<script type="text/javascript" nonce="31ec44ad184843da9386c5ce16f" src="//local.adguard.org?ts=1686823947308&amp;name=AdGuard%20Extra&amp;type=user-script"></script><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        .form-control{
+        padding: 1.375rem .75rem !important;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3 class="pt-5 text-center">Django ToDo App</h3>
+        <div class="row">
+            <h4>My Day</h4>
+            <p class="text-muted">{% now "jS F Y" %}</p>
+            <div class="col-md-7 col-lg-7" style="height: 450px; overflow: scroll;">
+                <!-- List of all the tasks for the day -->
+                <div class="card m-1">
+                    <div class="card-body">
+                        This is some Task
+                        <span style="position: relative; float: right;">
+                            <a class="btn btn-success"><i class="fa fa-check"></i> Mark as Done</a>
+                            <a class="btn btn-danger"><i class="fa fa-trash"></i></a>
+                            <a class="btn btn-primary"><i class="fa fa-pencil"></i></a>
+                        </span>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="col-md-5 col-lg-5">
+                <h5>Completed Tasks</h5>
+                <!-- List of all the tasks that have completed -->
+                <div class="card m-1">
+                    <div class="card-body">
+                        This is the completed task.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-6 p-0" style="position: absolute; bottom: 50px;">
+                <!-- To Do Form -->
+                <form action="" >
+                    <div class="form-group">
+                        <span style="display: flex;">
+                            <input type="text" class="form-control" placeholder="Add a task">
+                            <button class="btn btn-primary" style="width: 200px;"><i class="fa fa-plus"></i> Add</button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
