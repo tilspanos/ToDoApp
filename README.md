@@ -21,7 +21,7 @@ Git [(https://git-scm.com/downloads)](url)
 First, you will need to clone the repository using Git. Open your terminal and run the following command:
 
 ```
-git clone https://github.com/yourusername/todo-app.git
+git clone https://github.com/tilspanos/ToDoApp.git
 ```
 
 <h3>2. Create a virtual environment</h3>
@@ -33,7 +33,7 @@ It is a good practice to create a virtual environment for your Python projects. 
 
 Navigate to the project directory:
 ```
-cd todo-app
+cd ToDoApp
 ```
 
 Create a virtual environment:
